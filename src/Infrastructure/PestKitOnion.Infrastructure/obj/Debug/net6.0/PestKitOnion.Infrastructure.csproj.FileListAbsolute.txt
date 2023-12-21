@@ -1,0 +1,11 @@
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Infrastructure\PestKitOnion.Infrastructure\bin\Debug\net6.0\PestKitOnion.Infrastructure.deps.json
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Infrastructure\PestKitOnion.Infrastructure\bin\Debug\net6.0\PestKitOnion.Infrastructure.dll
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Infrastructure\PestKitOnion.Infrastructure\bin\Debug\net6.0\PestKitOnion.Infrastructure.pdb
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Infrastructure\PestKitOnion.Infrastructure\obj\Debug\net6.0\PestKitOnion.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Infrastructure\PestKitOnion.Infrastructure\obj\Debug\net6.0\PestKitOnion.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Infrastructure\PestKitOnion.Infrastructure\obj\Debug\net6.0\PestKitOnion.Infrastructure.AssemblyInfo.cs
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Infrastructure\PestKitOnion.Infrastructure\obj\Debug\net6.0\PestKitOnion.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Infrastructure\PestKitOnion.Infrastructure\obj\Debug\net6.0\PestKitOnion.Infrastructure.dll
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Infrastructure\PestKitOnion.Infrastructure\obj\Debug\net6.0\refint\PestKitOnion.Infrastructure.dll
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Infrastructure\PestKitOnion.Infrastructure\obj\Debug\net6.0\PestKitOnion.Infrastructure.pdb
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Infrastructure\PestKitOnion.Infrastructure\obj\Debug\net6.0\ref\PestKitOnion.Infrastructure.dll

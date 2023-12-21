@@ -1,0 +1,15 @@
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Core\PestKitOnion.Application\bin\Debug\net6.0\PestKitOnion.Application.deps.json
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Core\PestKitOnion.Application\bin\Debug\net6.0\PestKitOnion.Application.dll
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Core\PestKitOnion.Application\bin\Debug\net6.0\PestKitOnion.Application.pdb
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Core\PestKitOnion.Application\bin\Debug\net6.0\PestKitOnion.Domain.dll
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Core\PestKitOnion.Application\bin\Debug\net6.0\PestKitOnion.Domain.pdb
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Core\PestKitOnion.Application\obj\Debug\net6.0\PestKitOnion.Application.csproj.AssemblyReference.cache
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Core\PestKitOnion.Application\obj\Debug\net6.0\PestKitOnion.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Core\PestKitOnion.Application\obj\Debug\net6.0\PestKitOnion.Application.AssemblyInfoInputs.cache
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Core\PestKitOnion.Application\obj\Debug\net6.0\PestKitOnion.Application.AssemblyInfo.cs
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Core\PestKitOnion.Application\obj\Debug\net6.0\PestKitOnion.Application.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Core\PestKitOnion.Application\obj\Debug\net6.0\PestKitOnion.Application.csproj.CopyComplete
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Core\PestKitOnion.Application\obj\Debug\net6.0\PestKitOnion.Application.dll
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Core\PestKitOnion.Application\obj\Debug\net6.0\refint\PestKitOnion.Application.dll
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Core\PestKitOnion.Application\obj\Debug\net6.0\PestKitOnion.Application.pdb
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Core\PestKitOnion.Application\obj\Debug\net6.0\ref\PestKitOnion.Application.dll
