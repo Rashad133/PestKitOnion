@@ -3,12 +3,13 @@ using PestKitOnion.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace PestKitOnion.Persistence.Contexts
 {
-    internal class AppDbContext:DbContext
+    public class AppDbContext:DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options):base(options) 
         {
@@ -30,6 +31,8 @@ namespace PestKitOnion.Persistence.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             base.OnModelCreating(modelBuilder);
         }
     }

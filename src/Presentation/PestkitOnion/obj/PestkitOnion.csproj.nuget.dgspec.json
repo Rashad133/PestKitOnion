@@ -4,14 +4,95 @@
     "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Presentation\\PestkitOnion\\PestkitOnion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Presentation\\PestkitOnion\\PestkitOnion.csproj": {
+    "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Core\\PestKitOnion.Application\\PestKitOnion.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Presentation\\PestkitOnion\\PestkitOnion.csproj",
-        "projectName": "PestkitOnion",
-        "projectPath": "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Presentation\\PestkitOnion\\PestkitOnion.csproj",
+        "projectUniqueName": "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Core\\PestKitOnion.Application\\PestKitOnion.Application.csproj",
+        "projectName": "PestKitOnion.Application",
+        "projectPath": "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Core\\PestKitOnion.Application\\PestKitOnion.Application.csproj",
         "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Presentation\\PestkitOnion\\obj\\",
+        "outputPath": "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Core\\PestKitOnion.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Core\\PestKitOnion.Domain\\PestKitOnion.Domain.csproj": {
+                "projectPath": "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Core\\PestKitOnion.Domain\\PestKitOnion.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Core\\PestKitOnion.Domain\\PestKitOnion.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Core\\PestKitOnion.Domain\\PestKitOnion.Domain.csproj",
+        "projectName": "PestKitOnion.Domain",
+        "projectPath": "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Core\\PestKitOnion.Domain\\PestKitOnion.Domain.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Core\\PestKitOnion.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,7 +120,147 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Infrastructure\\PestKitOnion.Persistence\\PestKitOnion.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Infrastructure\\PestKitOnion.Persistence\\PestKitOnion.Persistence.csproj",
+        "projectName": "PestKitOnion.Persistence",
+        "projectPath": "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Infrastructure\\PestKitOnion.Persistence\\PestKitOnion.Persistence.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Infrastructure\\PestKitOnion.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Core\\PestKitOnion.Application\\PestKitOnion.Application.csproj": {
+                "projectPath": "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Core\\PestKitOnion.Application\\PestKitOnion.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.25, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Presentation\\PestkitOnion\\PestkitOnion.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Presentation\\PestkitOnion\\PestkitOnion.csproj",
+        "projectName": "PestkitOnion",
+        "projectPath": "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Presentation\\PestkitOnion\\PestkitOnion.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Presentation\\PestkitOnion\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Infrastructure\\PestKitOnion.Persistence\\PestKitOnion.Persistence.csproj": {
+                "projectPath": "C:\\Users\\ACER\\Desktop\\PestkitOnion\\PestKitOnion\\src\\Infrastructure\\PestKitOnion.Persistence\\PestKitOnion.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"

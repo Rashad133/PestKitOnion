@@ -9,7 +9,7 @@ namespace PestKitOnion.Domain.Entities
 {
     public class Project:BaseNameableEntity
     {
-        public int Id { get; set; }
+        public int Id { get; set; } 
         public ICollection<ProjectImage> ProjectImages { get; set; }
     }
 }

@@ -13,3 +13,4 @@ C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Core\PestKitOnion.Applicatio
 C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Core\PestKitOnion.Application\obj\Debug\net6.0\refint\PestKitOnion.Application.dll
 C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Core\PestKitOnion.Application\obj\Debug\net6.0\PestKitOnion.Application.pdb
 C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Core\PestKitOnion.Application\obj\Debug\net6.0\ref\PestKitOnion.Application.dll
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Core\PestKitOnion.Application\obj\Debug\net6.0\PestKitOnion.Application.sourcelink.json
