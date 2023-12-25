@@ -45,5 +45,13 @@ namespace PestKitOnion.Persistence.Implementations.Services
             _repository.Update(author);
             await _repository.SaveChangesAsync();
         }
+
+        public async Task SoftDeleteAsync(int id)
+        {
+            Author author= await _repository.GetByIdAsync(id);
+            if (author is null) throw new Exception("Not Found");
+            _repository.SoftDelete(author);
+            await _repository.SaveChangesAsync();
+        }
     }
 }

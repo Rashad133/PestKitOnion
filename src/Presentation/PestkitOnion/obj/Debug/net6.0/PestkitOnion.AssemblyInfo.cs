@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PestkitOnion")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a5f1ecea2da3d848c75f7d2187db4923ef3b65e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff9f07174ebc4f418fada22bd0c193cfd8dbbf75")]
 [assembly: System.Reflection.AssemblyProductAttribute("PestkitOnion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PestkitOnion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

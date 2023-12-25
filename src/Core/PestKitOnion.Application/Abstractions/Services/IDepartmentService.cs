@@ -8,5 +8,6 @@ namespace PestKitOnion.Application.Abstractions.Services
         Task<ICollection<DepartmentItemDto>> GetAllAsync(int page, int take);
         Task CreateAsync(DepartmentCreateDto departmentDto);
         Task UpdateAsync(DepartmentUpdateDto departmentDto);
+        Task SoftDeleteAsync(int id);
     }
 }

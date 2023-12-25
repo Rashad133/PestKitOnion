@@ -16,7 +16,6 @@ namespace PestKitOnion.Domain.Entities.Common
 
         public BaseEntity()
         {
-            CreatedAt = DateTime.Now;
             CreatedBy = "rufullayev.rashad";
         }
     }

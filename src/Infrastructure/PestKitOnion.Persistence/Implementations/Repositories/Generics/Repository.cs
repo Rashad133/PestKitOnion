@@ -25,6 +25,11 @@ namespace PestKitOnion.Persistence.Implementations.Repositories.Generics
         {
             _table.Remove(entity);
         }
+        public void SoftDelete(T entity)
+        {
+            entity.IsDeleted = true;
+            _table.Update(entity);
+        }
 
         public IQueryable<T> GetAllAsync(
             Expression<Func<T, bool>>? expression = null,
@@ -32,7 +37,8 @@ namespace PestKitOnion.Persistence.Implementations.Repositories.Generics
             bool isDescending = false,
             int skip = 0,
             int take = 0,
-            bool isTracking = false,
+            bool isTracking = true,
+            bool isDeleted = false,
             params string[] includes)
         {
             var query = _table.AsQueryable();
@@ -56,6 +62,7 @@ namespace PestKitOnion.Persistence.Implementations.Repositories.Generics
                     query = query.Include(includes[i]);
                 }
             }
+            if(isDeleted) query=query.IgnoreQueryFilters();
             return isTracking ? query : query.AsNoTracking();
         }
         public async Task<T> GetByIdAsync(int id)
@@ -68,6 +75,8 @@ namespace PestKitOnion.Persistence.Implementations.Repositories.Generics
         {
             await _db.SaveChangesAsync();
         }
+
+        
 
         public async void Update(T entity)
         {

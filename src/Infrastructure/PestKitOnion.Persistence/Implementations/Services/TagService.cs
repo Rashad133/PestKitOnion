@@ -33,6 +33,14 @@ namespace PestKitOnion.Persistence.Implementations.Services
             return tagDtos;
         }
 
+        public  async Task SoftDeleteAsync(int id)
+        {
+            Tag tag = await _repository.GetByIdAsync(id);
+            if (id <= 0) throw new Exception("Not Found");
+            _repository.SoftDelete(tag);
+            await _repository.SaveChangesAsync();
+        }
+
         public async Task UpdateAsync(TagUpdateDto tagDto)
         {
             Tag tag = await _repository.GetByIdAsync(tagDto.Id);

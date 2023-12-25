@@ -16,13 +16,15 @@ namespace PestKitOnion.Application.Abstractions.Repositories.Generics
             bool isDescending = false,
             int skip = 0,
             int take = 0,
-            bool isTracking = false,
+            bool isTracking = true,
+            bool isDeleted=false,
             params string[] includes
             );
         Task<T> GetByIdAsync(int id);
         Task AddAsync(T entity);
         void Update(T entity);
         void Delete(T entity);
+        void SoftDelete(T entity);
         Task SaveChangesAsync();
     }
 }

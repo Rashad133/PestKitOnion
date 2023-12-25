@@ -28,11 +28,18 @@ namespace PestkitOnion.Controllers
             return StatusCode(StatusCodes.Status201Created);
         }
 
-        [HttpPut()]
+        [HttpPut]
         public async Task<IActionResult> Update([FromForm] TagUpdateDto tagDto)
         {
             if (tagDto.Id <= 0) return StatusCode(StatusCodes.Status400BadRequest);
             await _service.UpdateAsync(tagDto);
+            return NoContent();
+        }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            if (id <= 0) return StatusCode(StatusCodes.Status400BadRequest);
+            await _service.SoftDeleteAsync(id);
             return NoContent();
         }
     }

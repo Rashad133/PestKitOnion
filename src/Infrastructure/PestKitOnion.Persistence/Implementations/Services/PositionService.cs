@@ -31,6 +31,14 @@ namespace PestKitOnion.Persistence.Implementations.Services
             return positionDtos;
         }
 
+        public async Task SoftDeleteAsync(int id)
+        {
+            Position position= await _repository.GetByIdAsync(id);
+            if (id <= 0) throw new Exception("Not Found");
+            _repository.SoftDelete(position);
+            await _repository.SaveChangesAsync();
+        }
+
         public async Task UpdateAsync(PositionUpdateDto positionDto)
         {
             Position position = await _repository.GetByIdAsync(positionDto.Id);
