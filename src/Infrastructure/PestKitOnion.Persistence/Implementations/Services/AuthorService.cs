@@ -20,7 +20,7 @@ namespace PestKitOnion.Persistence.Implementations.Services
 
         public async Task<ICollection<AuthorItemDto>> GetAllAsync(int page, int take)
         {
-            ICollection<Author> authors = await _repository.GetAllAsync(skip: (page - 1) * take, take: take, isTracking: false).ToListAsync();
+            ICollection<Author> authors = await _repository.GetAllWhereAsync(skip: (page - 1) * take, take: take, isTracking: false).ToListAsync();
 
             ICollection<AuthorItemDto> authorDtos = _mapper.Map<ICollection<AuthorItemDto>>(authors);
 
@@ -52,6 +52,15 @@ namespace PestKitOnion.Persistence.Implementations.Services
             if (author is null) throw new Exception("Not Found");
             _repository.SoftDelete(author);
             await _repository.SaveChangesAsync();
+        }
+
+        public async Task<AuthorGetDto> GetByIdAsync(int id)
+        {
+            Author author = await _repository.GetByIdAsync(id);
+            if (author is null) throw new Exception("Not found");
+            var dto = _mapper.Map<AuthorGetDto>(author);
+
+            return dto;
         }
     }
 }

@@ -1,9 +1,10 @@
 ﻿using FluentValidation;
+using PestKitOnion.Application.DTOs.Department;
 using PestKitOnion.Domain.Entities;
 
 namespace PestKitOnion.Application.Validators
 {
-    public class DepartmentCreateDtoValidator:AbstractValidator<Department>
+    public class DepartmentCreateDtoValidator:AbstractValidator<DepartmentCreateDto>
     {
         public DepartmentCreateDtoValidator()
         {

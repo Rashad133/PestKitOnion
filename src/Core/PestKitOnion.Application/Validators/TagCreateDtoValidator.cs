@@ -1,9 +1,10 @@
 ﻿using FluentValidation;
+using PestKitOnion.Application.DTOs.Tag;
 using PestKitOnion.Domain.Entities;
 
 namespace PestKitOnion.Application.Validators
 {
-    public class TagCreateDtoValidator:AbstractValidator<Tag>
+    public class TagCreateDtoValidator:AbstractValidator<TagCreateDto>
     {
         public TagCreateDtoValidator()
         {

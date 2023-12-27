@@ -11,6 +11,8 @@ namespace PestKitOnion.Application.MappingProfiles
             CreateMap<Position,PositionItemDto>().ReverseMap();
             CreateMap<Position,PositionUpdateDto>().ReverseMap();
             CreateMap<Position,PositionCreateDto>().ReverseMap();
+            CreateMap<Position, IncludePositionDto>().ReverseMap();
+            CreateMap<Position, PositionGetDto>();
         }
     }
 }

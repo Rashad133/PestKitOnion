@@ -25,12 +25,21 @@ namespace PestKitOnion.Persistence.Implementations.Services
 
         public async Task<ICollection<TagItemeDto>> GetAllAsync(int page, int take)
         {
-            ICollection<Tag> tags = await _repository.GetAllAsync(skip: (page - 1) * take, take: take, isTracking: false).ToListAsync();
+            ICollection<Tag> tags = await _repository.GetAllWhereAsync(skip: (page - 1) * take, take: take, isTracking: false).ToListAsync();
 
             ICollection<TagItemeDto> tagDtos = _mapper.Map<ICollection<TagItemeDto>>(tags);
 
 
             return tagDtos;
+        }
+
+        public async Task<TagGetDto> GetByIdAsync(int id)
+        {
+            Tag tag= await _repository.GetByIdAsync(id);
+            if (tag is null) throw new Exception("Not found");
+            var dto = _mapper.Map<TagGetDto>(tag);
+
+            return dto;
         }
 
         public  async Task SoftDeleteAsync(int id)

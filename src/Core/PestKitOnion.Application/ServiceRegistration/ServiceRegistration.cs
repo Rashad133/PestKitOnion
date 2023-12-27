@@ -1,12 +1,7 @@
-﻿using FluentValidation;
-using FluentValidation.AspNetCore;
+﻿using FluentValidation.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using PestKitOnion.Application.Validators;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PestKitOnion.Application.Abstractions.ServiceRegistration
 {
@@ -16,7 +11,8 @@ namespace PestKitOnion.Application.Abstractions.ServiceRegistration
         {
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
-            services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters().AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+            services.AddFluentValidation(options=>options.RegisterValidatorsFromAssemblyContaining(typeof(PositionCreateDtoValidator)));
+    
 
             return services;
         }

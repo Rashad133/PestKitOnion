@@ -1,5 +1,4 @@
-﻿
-namespace PestKitOnion.Application.DTOs.Author
+﻿namespace PestKitOnion.Application.DTOs.Author
 {
-    public record AuthorCreateDto(string Name,string surname);
+    public record AuthorCreateDto(string Name,string Surname);
 }

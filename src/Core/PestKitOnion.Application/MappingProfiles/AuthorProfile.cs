@@ -11,6 +11,9 @@ namespace PestKitOnion.Application.MappingProfiles
             CreateMap<Author, AuthorItemDto>().ReverseMap();
             CreateMap<Author, AuthorCreateDto>().ReverseMap();
             CreateMap<Author, AuthorUpdateDto>().ReverseMap();
+            CreateMap<Author, IncludeAuthorDto>().ReverseMap();
+
+            CreateMap<Author, AuthorGetDto>();
 
         }
     }

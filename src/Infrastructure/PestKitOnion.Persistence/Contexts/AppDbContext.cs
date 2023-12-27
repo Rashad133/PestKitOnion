@@ -1,16 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using PestKitOnion.Domain.Entities;
 using PestKitOnion.Domain.Entities.Common;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using PestKitOnion.Persistence.Common;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PestKitOnion.Persistence.Contexts
 {
-    public class AppDbContext:DbContext
+    public class AppDbContext:IdentityDbContext<AppUser>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options):base(options) 
         {
@@ -32,7 +29,7 @@ namespace PestKitOnion.Persistence.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<BaseEntity>().HasQueryFilter(d => d.IsDeleted == false) ;
+            modelBuilder.AppQueryFilters();
 
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             base.OnModelCreating(modelBuilder);

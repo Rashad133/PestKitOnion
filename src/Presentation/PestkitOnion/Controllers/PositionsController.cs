@@ -20,7 +20,11 @@ namespace PestkitOnion.Controllers
         {
             return Ok(await _service.GetAllAsync(page,take));
         }
-
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Get(int id)
+        {
+            return Ok(await _service.GetByIdAsync(id));
+        }
         [HttpPost]
         public async Task<IActionResult> Create([FromForm] PositionCreateDto positionDto)
         {

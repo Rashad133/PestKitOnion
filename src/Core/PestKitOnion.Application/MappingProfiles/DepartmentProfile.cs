@@ -11,6 +11,8 @@ namespace PestKitOnion.Application.MappingProfiles
             CreateMap<Department,DepartmentItemDto>().ReverseMap();
             CreateMap<Department, DepartmentUpdateDto>().ReverseMap();
             CreateMap<Department, DepartmentCreateDto>().ReverseMap();
+            CreateMap<Department, IncludeDepartmentDto>().ReverseMap();
+            CreateMap<Department, DepartmentGetDto>();
         }
     }
 }
