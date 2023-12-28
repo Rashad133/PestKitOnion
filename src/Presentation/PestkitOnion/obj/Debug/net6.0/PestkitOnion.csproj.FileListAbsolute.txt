@@ -83,3 +83,6 @@ C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Presentation\PestkitOnion\bi
 C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Presentation\PestkitOnion\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Presentation\PestkitOnion\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Presentation\PestkitOnion\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Presentation\PestkitOnion\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Presentation\PestkitOnion\bin\Debug\net6.0\PestKitOnion.Infrastructure.dll
+C:\Users\ACER\Desktop\PestkitOnion\PestKitOnion\src\Presentation\PestkitOnion\bin\Debug\net6.0\PestKitOnion.Infrastructure.pdb

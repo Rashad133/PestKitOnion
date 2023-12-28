@@ -1,4 +1,5 @@
-﻿using PestKitOnion.Application.DTOs.Users;
+﻿using PestKitOnion.Application.DTOs.Tokens;
+using PestKitOnion.Application.DTOs.Users;
 
 namespace PestKitOnion.Application.Abstractions.Services
 {

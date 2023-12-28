@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PestKitOnion.Application.Abstractions.Services;
 using PestKitOnion.Application.DTOs.Author;
@@ -8,6 +9,7 @@ namespace PestkitOnion.Controllers
 {
     [Route("[controller]")]
     [ApiController]
+    [Authorize]
     public class TagsController : ControllerBase
     {
         private readonly ITagService _service;

@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\PestKitOnion.Infrastructure\PestKitOnion.Infrastructure.csproj" />
     <ProjectReference Include="..\..\Infrastructure\PestKitOnion.Persistence\PestKitOnion.Persistence.csproj" />
   </ItemGroup>
 

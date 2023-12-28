@@ -23,8 +23,8 @@ namespace PestkitOnion.Controllers
         [HttpPost("[action]")]
         public async Task<IActionResult> Login([FromForm] LoginDto dto)
         {
-            await _service.Login(dto);
-            return StatusCode(StatusCodes.Status204NoContent);
+
+            return Ok(await _service.Login(dto));
         }
     }
 }
